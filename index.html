@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootCamp PHP - Ejercicio 1</title>
+    <style>
+        body{
+            max-width: 1200px;
+            margin: 0 auto;
+            color: white;
+        }
+        .topbar{
+            background-color: #2E4059;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center;
+            border: 10px solid black;
+            color: #EA5455;
+            padding: 20px;
+        }
+        .topbar div {
+            flex: inherit;
+        }
+        .menu{
+            background-color: #F17A3F;
+            text-align: center;
+            border: 10px solid black;
+            color: #FED460;
+            padding: 20px;
+        }
+        .container{
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 10px solid black;
+        }
+        .content{
+            background-color: #4E4E6A;
+            flex: 4;
+            display: flex;
+            color: #206CB0;
+            font-weight: bold;
+            padding: 20px;
+        }
+        .aside{
+            background-color: #F73F52;
+            flex: 1;
+            color: #FEEA86;
+            padding: 20px;
+        }
+        .footer{
+            margin-top: 20px;
+            background-color: #E6AF2F;
+            padding: 20px;
+            border: 10px solid black;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .content{
+                flex: 100%;
+            }
+            .aside{
+                flex: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .topbar div {
+               flex: 100%;
+            }
+            .content{
+                display: grid;
+            }
+            .aside{
+                flex: 100%;
+            }
+        
+
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div>idioma</div>
+        <div>LOGO</div>
+        <div>Facebook Twitter Linkedin</div>
+    </div>
+    <div class="menu">
+        MENU1 MENU2 MENU3 MENU4
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque cum sequi nam labore, quidem, totam dolor esse commodi accusamus officia delectus quo, nobis dolores possimus. Iusto commodi in ea.
+            </div>
+            <div class="right">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet perspiciatis assumenda maxime provident temporibus veritatis iure veniam ad ea, nesciunt sequi esse? Totam odit commodi vitae similique praesentium perferendis ullam?
+            </div>
+        </div>
+        <div class="aside">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente in quas corrupti aliquid soluta rerum iure repellendus ea? Asperiores minus officiis, ullam sint voluptatem molestiae! Atque omnis sint quidem nihil.</p>
+        </div>
+    </div>
+    <div class="footer">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore minus eius distinctio non, numquam voluptate. Culpa maiores harum temporibus accusamus non distinctio provident reprehenderit tempora, soluta, omnis, perspiciatis eligendi saepe?
+    </div>
+
+
+</body>
+</html>
