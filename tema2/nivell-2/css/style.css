@@ -34,7 +34,6 @@ a{
 
 .logo{
     grid-column: 1 / 2;
-    animation: moverizq 0.5s ease-in;
 }
 
 .logo img{
@@ -43,13 +42,11 @@ a{
 
 .menu {
     grid-column: 2 / 8;
-    animation: moverizq 1s ease-out;
 }
 
 .rrss {
     grid-column: 8 / 9;
     text-align: right;
-    animation: moverder 0.5s ease-in;
 }
 
 nav ul li,
@@ -171,28 +168,6 @@ nav ul li i:hover,
     padding: 10px 0;
     border-right: 10px solid #d0d0d0;
 border-left: 10px solid #d0d0d0;
-}
-
-@keyframes moverizq{
-    0%{
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moverder{
-    0%{
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
 }
 
 
