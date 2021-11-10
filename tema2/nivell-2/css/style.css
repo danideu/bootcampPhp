@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(233, 233, 233);
+}
+
+.contenedor{
+    max-width: 1200px; 
+    margin: 20px auto;
+    background-color: white;
+}
+
+.header{
+    background-image: url('../images/header.jpg');
+    background-position: center;
+    padding: 20px 20px 0 20px;
+}
+
+.topbar{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.logo{
+    grid-column: 1 / 2;
+}
+
+.logo img{
+    max-width: 80px;
+}
+
+.menu {
+    grid-column: 2 / 8;
+}
+
+.rrss {
+    grid-column: 8 / 9;
+    text-align: right;
+}
+
+nav ul li,
+.rrss ul li{
+    display: inline-block;
+}
+
+.menu-bar{
+    display: none;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.menu nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+nav ul li i {
+    padding-right: 5px;
+    color: #646464;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+nav ul li a:hover,
+nav ul li i:hover,
+.rrss ul li i:hover{
+    color: #c36457;
+    cursor: pointer;
+}
+.rrss li{
+    padding-right: 10px;
+}
+.rrss i{
+    color: #646464;
+}
+.slider {
+    min-height: 300px;
+    display: flex;
+}
+
+.slider p{
+    align-self: end;
+    background: #b6b6b678;
+    height: 100px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+    color: #e09365;
+}
+
+
+.contenido{
+
+}
+
+
+/* Media Query para Tablets */
+@media screen and (max-width: 768px){
+    body{
+        overflow: hidden;
+    }
+    .rrss {
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+        grid-column: 8 / 9;
+    }
+    .menu-bar i{
+        font-size: 20px;
+    }
+    .topbar{
+        position: relative;
+    }
+    .menu{
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+    .menu nav{
+        grid-column: 7 / 10;
+    }
+
+    .menu nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu nav ul li{
+        margin-bottom: 20px;
+    }
+
+    .menu-toggle{
+        transform:translateX(47%);
+    }
+
+}
+
+/* Media Query para Móvil */
+@media screen and (max-width: 450px){
+    .contenedor .topbar>div{
+        grid-column: span 3;
+    }
+    .contenedor .contenido .posts, 
+    .contenedor .contenido .posts div,
+    .contenedor .sidebar{
+        grid-column: span 3;
+    }
+}
